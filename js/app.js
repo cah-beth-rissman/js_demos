@@ -7,7 +7,6 @@ function getUserName(){
   return document.write(userName);
 }
 
-
 function guessANumber(){
   let answer;
   while(answer <== '8'){
@@ -19,8 +18,6 @@ function guessANumber(){
     }
   }
 }
-
-
 
 function getUserTime(){
   let message;
