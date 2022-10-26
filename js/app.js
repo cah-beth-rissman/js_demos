@@ -7,17 +7,6 @@ function getUserName(){
   return document.write(userName);
 }
 
-function guessANumber(){
-  let answer;
-  while(answer <== '8'){
-    answer = prompt('How many people are in your party?');
-    if(answer !== '7'){
-      alert('Reservations are for parties of 8 or less only.');
-    } else {
-      alert('Proceed to enter your reservation time request.');
-    }
-  }
-}
 
 function getUserTime(){
   let message;
@@ -47,7 +36,7 @@ function getUserTime(){
 
 
 
-// guessANumber();
+// guessANumber(); 
 // getUserName();
 // getUserTime();
 // displayRating();
