@@ -1,42 +1,37 @@
 'use strict';
-console.log('hello from the js file!');
+console.log('Hello from the JS Cafe app!');
 
-function getUserName(){
-  let userName = prompt('What is your party name?');
-  console.log('user name data type:', typeof(userName));
-  return document.write(userName);
+function getPartyName(){
+  let partyName = prompt('What is your party name?');
+  console.log('Party Name is:'+ partyName);
+  console.log('Party Name data type:', typeof(partyName));
 }
 
-
-function getUserTime(){
-  let message;
-  let time = prompt('What time is your reservation request?');
-  if(time <= 11){
-    message = 'Your brunch reservation is confirmed';
-  }else if(time >= 12 && time <= 18){
-    message = 'Your lunch reservation is confirmed';
-  } else if(time > 18 && time < 24) {
-    message = 'Your dinner reservation is confirmed';
-  } else {
-    message = 'Please enter a valid time between 7 and 21';
-  }
-  return message;
+function getReservationTime(){
+  let reserveTime = prompt('What time will your party arrive?');
+  console.log('Party will arrive at:' + reserveTime);
+  console.log('Reservation Time data type:', typeof(reserveTime));
 }
 
-
-// function displayRating() {
-//   let output = '';
-//   let rating = prompt('scale of 1-5, how many stars?');
-//   //for loop
-//   for(let i = 0; i < rating; i++){
-//     output += '<img  src=\'images/CRAIG-B.png\'  />';
-//   }
-//   return document.write(output);
+// function getMessage(){
+//   let message = '';
+//   let confirmation = prompt('Enter your party.');
+//   if (confirmation = 'Rissman'){
+//     message = 'Your reservation is confirmed';
+// } else {
+//   message = 'Try again';
+// }
+// return message;
 // }
 
+function getRating() {
+  let output = '';
+  let rating = prompt('How was your experience on a scale of 1-5?');
+  //for loop
+  for(let i = 0; i <= rating; i++){
+    output += '<img  src=\'images/good.png\'  />';
+  }
+  return document.write(output);
+}
 
 
-// guessANumber(); 
-// getUserName();
-// getUserTime();
-// displayRating();
